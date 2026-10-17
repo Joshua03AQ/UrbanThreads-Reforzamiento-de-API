@@ -20,5 +20,20 @@ namespace SharedModels
         [MinLength(8)]
         [MaxLength(12)]
         private string? PasswordHash { get; set; }
+
+        public string? username { 
+            get { return Username; } 
+            set { Username = value; }
+        }
+
+        public string? email { 
+            get { return Email; } 
+            set { Email = value; }
+        }
+
+        public string? passwordHash { 
+            get { return PasswordHash; } 
+            set { PasswordHash = value; }
+        }
     }
 }
