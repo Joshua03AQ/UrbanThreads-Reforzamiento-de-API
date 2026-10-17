@@ -1,0 +1,38 @@
+
+# Archivos temporales de Visual Studio
+.vs/
+**/.vs/
+
+# Archivos de compilación
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de registro
+*.log
+
+# Archivos temporales
+*.tmp
+*.cache
+  
+# Archivos de secretos
+secrets.json
+
+# Archivos temporales de Visual Studio
+.vs/
+bin/
+obj/
+
+# Variables de entorno privadas
+.env
+.env.*
+
+
+secrets.json

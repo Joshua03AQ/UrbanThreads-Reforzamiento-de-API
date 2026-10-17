@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SharedModels/SharedModels.csproj" />
+  <Project Path="UbranThreads_API/UbranThreads_API.csproj" Id="18260807-4d44-40cd-afa6-74e2eb27559a" />
+</Solution>
