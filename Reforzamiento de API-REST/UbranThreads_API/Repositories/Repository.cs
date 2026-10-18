@@ -69,7 +69,7 @@ namespace UbranThreads_API.Repositories
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<T> GetByAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await dbSet.FindAsync(id);
         }

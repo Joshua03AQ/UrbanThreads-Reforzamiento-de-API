@@ -2,7 +2,7 @@
 
 namespace UbranThreads_API.Repositories.IRepositories
 {
-    public interface IUsuarioRepositoy
+    public interface IUsuarioRepository
     {
         Task<Usuario> GetUserByUsernameAsync(string username);
         Task<Usuario> GetUserByEmailAsync(string email);

@@ -4,8 +4,8 @@ namespace UbranThreads_API.Dto
 {
     public class ProductoCreateDto
     {
-        [Required]
-        public int ProductoId { get; set; }
+        //[Required]
+        //public int ProductoId { get; set; }
         [Required]
         [StringLength(50)]
         public string? Tipo { get; set; }

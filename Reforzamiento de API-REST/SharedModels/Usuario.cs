@@ -21,6 +21,11 @@ namespace SharedModels
         [MaxLength(12)]
         private string? PasswordHash { get; set; }
 
+        public int id { 
+            get { return Id; } 
+            set { Id = value; }
+        }
+
         public string? username { 
             get { return Username; } 
             set { Username = value; }

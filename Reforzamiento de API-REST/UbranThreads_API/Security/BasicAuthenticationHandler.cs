@@ -10,9 +10,9 @@ namespace UbranThreads_API.Security
 {
     public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
-        private readonly IUsuarioRepositoy _usuarioRepositoy;
+        private readonly IUsuarioRepository _usuarioRepositoy;
 
-        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IUsuarioRepositoy usuarioRepositoy) : base(options, logger, encoder, clock)
+        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IUsuarioRepository usuarioRepositoy) : base(options, logger, encoder, clock)
         {
             _usuarioRepositoy = usuarioRepositoy;
         }

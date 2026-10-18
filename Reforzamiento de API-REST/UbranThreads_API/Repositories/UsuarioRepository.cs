@@ -6,11 +6,17 @@ using UbranThreads_API.Repositories.IRepositories;
 
 namespace UbranThreads_API.Repositories
 {
-    public class UsuarioRepositorycs : IUsuarioRepositoy
+    public class UsuarioRepository : IUsuarioRepository
     {
 
         private readonly UrbanThreadsContext? _context;
         private readonly IPasswordHasher<Usuario>? _passwordHasher;
+
+        public UsuarioRepository(UrbanThreadsContext context, IPasswordHasher<Usuario> passwordHasher)
+        {
+            _context = context;
+            _passwordHasher = passwordHasher;
+        }
 
         public async Task<Usuario> GetUserByEmailAsync(string email)
         {

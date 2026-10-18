@@ -2,10 +2,12 @@
 
 namespace UbranThreads_API.Dto
 {
-    public class RegisterUsuarioDtocs
+    public class RegisterUsuarioDto
     {
         [Required]
         public string? Username { get; set; }
+        [Required]
+        public string? Nombre { get; set; }
         [Required]
         public string? Apellido { get; set; }
         [Required]

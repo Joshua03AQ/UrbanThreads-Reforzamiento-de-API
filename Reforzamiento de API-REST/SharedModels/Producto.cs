@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SharedModels
 {
     public class Producto
     {
         [Key]
+        [Column("ProductoID")]
         public int ProductID { get; set; }
         [StringLength(50)]
         public string? Tipo { get; set; }

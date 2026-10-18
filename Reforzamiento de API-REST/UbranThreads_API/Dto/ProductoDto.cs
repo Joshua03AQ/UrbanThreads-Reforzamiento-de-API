@@ -2,15 +2,16 @@
 
 namespace UbranThreads_API.Dto
 {
-    public class ProducoDtocs
+    public class ProductoDto
     {
         [Required]
-        public int ProductoId { get; set; }
+        public int ProductoID { get; set; }
         [Required]
         public string Tipo { get; set; }
         [Required] 
         public string Marca { get; set; }
         [Required]
+        [MaxLength(1)]
         public string Talla { get; set; }
         [Required]
         public string Color { get; set; }
