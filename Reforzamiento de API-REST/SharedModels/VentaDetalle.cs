@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SharedModels
 {
@@ -6,6 +7,7 @@ namespace SharedModels
     {
         public int ID { get; set; }
         public int VentaID { get; set; }
+        [Column("ProductoID")]
         public int ProductID { get; set; }
         [StringLength(50)]
         public string? TipoPrenda { get; set; }

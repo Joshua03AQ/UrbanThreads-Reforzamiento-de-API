@@ -13,8 +13,8 @@ namespace UbranThreads_API
             CreateMap<Producto, ProductoUpdateDto>().ReverseMap();
             CreateMap<Venta, VentaDto>().ReverseMap();
             CreateMap<Venta, VentaCreateDto>().ReverseMap();
-            CreateMap<VentaDetalle, VentaDetalleDto>().ReverseMap();
-            CreateMap<VentaDetalle, VentaDetalleCreateDto>().ReverseMap();
+            CreateMap<VentaDetalleCreateDto, VentaDetalle>().ForMember(dest => dest.ProductID, opt => opt.MapFrom(src => src.ProductoID));
+            CreateMap<VentaDetalle, VentaDetalleDto>().ForMember(dest => dest.ProductoID, opt => opt.MapFrom(src => src.ProductID));
             CreateMap<Usuario, RegisterUsuarioDto>().ReverseMap();
         }
     }

@@ -4,7 +4,7 @@ namespace UbranThreads_API.Dto
 {
     public class VentaDetalleCreateDto
     {
-        public int ID { get; set; }
+        //public int ID { get; set; }
         public int VentaID { get; set; }
         public int ProductoID { get; set; }
         [StringLength(50)]

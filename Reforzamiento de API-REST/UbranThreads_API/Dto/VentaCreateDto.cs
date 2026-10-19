@@ -2,7 +2,7 @@
 {
     public class VentaCreateDto
     {
-        public int VentaID { get; set; }
+        //public int VentaID { get; set; }
         public DateTime Registro { get; set; }
 
     }

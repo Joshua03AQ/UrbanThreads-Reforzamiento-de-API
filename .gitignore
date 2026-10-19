@@ -36,3 +36,15 @@ obj/
 
 
 secrets.json
+
+
+.vs/
+bin/
+obj/
+secrets.json
+.env
+.env.*
+*.bak
+*.mdf
+*.ldf
+*.bacpac
